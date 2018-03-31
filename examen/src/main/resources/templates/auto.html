@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Enter Consumo</title>
+</head>
+<body>
+
+
+	<form action="#" th:action="@{/new}" th:object="${auto}" method="post">
+		<table>
+
+			<tr>
+				<th>Nombre:</th>
+				<th><input type="text" th:field="*{nombre}" /></th>
+			</tr>
+
+			<tr>
+				<th>Recorrido:</th>
+				<th><input type="text" th:field="*{Recorrido}" /></th>
+			</tr>
+
+			<tr>
+				<th>Vehiculo</th>
+				<th><select th:field="*{auto}">
+						<option th:value="Vehiculo1">Vehiculo 1</option>
+						<option th:value="Vehiculo2">Vehiculo 2</option>
+						<option th:value="Vehiculo3">Vehiculo 3</option>
+				</select></th>
+
+			</tr>
+
+
+			<tr>
+
+				<th></th>
+				<th><input type="submit" value="Resultado" /> <input type="reset"
+					value="Cancelar" /></th>
+
+			</tr>
+		</table>
+
+
+	</form>
+
+</body>
+</html>
+
+
+

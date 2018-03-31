@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Consumo de Gasolina</title>
+</head>
+<body>
+
+	<p th:text="'Señor(a):' + ${auto.nombre}" />
+	<p th:text="'Usted manejo el vehiculo :' + ${auto.auto}" />
+	<p th:text="'Usted consumió:' + ${auto.consumo} + ' galones' " />
+	
+</body>
+</html>
